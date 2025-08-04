@@ -1,0 +1,81 @@
+{% extends 'layout.html' %}
+
+{% block title %}Contact Me{% endblock %}
+
+{% block style %}
+<style>
+    .contact-header h2 {
+        text-align: center;
+        color: #2c5c3b;
+        font-weight: 600;
+        margin-bottom: 30px;
+    }
+    .contact-card {
+        background-color: #ffffff;
+        border: 1px solid #e0e0e0;
+        border-radius: 15px;
+        text-align: center;
+        padding: 40px 20px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .contact-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+    .contact-card .card-icon {
+        font-size: 3rem; /* 48px */
+        color: #2c5c3b;
+        margin-bottom: 20px;
+    }
+    .contact-card .card-title {
+        font-size: 1.5rem; /* 24px */
+        font-weight: 600;
+        margin-bottom: 25px;
+    }
+    .contact-card .btn {
+        border-radius: 50px;
+        padding: 10px 25px;
+        font-weight: 600;
+    }
+</style>
+{% endblock %}
+
+{% block body %}
+<div class="container main-container my-3 mt-3">
+    <div class="contact-header">
+        <h2>Connect With Me</h2>
+    </div>
+    <div class="row justify-content-center">
+        <!-- GitHub Card -->
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="contact-card">
+                <i class="fab fa-github card-icon"></i>
+                <h5 class="card-title">GitHub</h5>
+                <a href="https://github.com/DharmendraGupta2024" target="_blank" class="btn btn-dark">View Profile</a>
+            </div>
+        </div>
+
+        <!-- LinkedIn Card -->
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="contact-card">
+                <i class="fab fa-linkedin card-icon"></i>
+                <h5 class="card-title">LinkedIn</h5>
+                <a href="https://www.linkedin.com/in/dharmendragupta2024" target="_blank" class="btn btn-primary">View Profile</a>
+            </div>
+        </div>
+
+        <!-- Email Card -->
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="contact-card">
+                <i class="fas fa-envelope card-icon"></i>
+                <h5 class="card-title">Email</h5>
+                <a href="mailto:dharmendragupta2024@gmail.com" class="btn btn-danger">Send Email</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
