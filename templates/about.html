@@ -1,0 +1,41 @@
+{% extends 'layout.html' %}
+
+{% block title %}About Me{% endblock %}
+
+{% block style %}
+<style>
+  .about-section {
+    padding: 40px;
+    margin-top: 0;
+    background: rgba(248, 249, 250, 0.95);
+    border-radius: 15px;
+  }
+  .about-section h2 {
+    text-align: center;
+    color: #2c5c3b;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  .about-section p {
+    line-height: 1.7;
+    text-align: justify;
+    color: #343a40;
+    font-size: 1.1rem;
+  }
+</style>
+{% endblock %}
+
+{% block body %}
+<div class="container main-container my-3 mt-3">
+  <div class="about-section">
+    <h2>About Me</h2>
+    <p>
+      Currently pursuing a Bachelor of Technology in Computer Science and Engineering, I have hands-on experience in full-stack development. I am skilled in building responsive, high-performance web applications using front-end technologies like HTML, CSS, JavaScript, and React, and optimizing them through effective API integration.
+      <br /><br />
+      This project particularly showcases my passion for applying machine learning to build intelligent solutions. I have practical experience with Python and its data science ecosystem, including Pandas, NumPy, and Scikit-learn, and in deploying predictive models on the web using the Flask framework.
+      <br /><br />
+      I am seeking to contribute my technical proficiency and innovative thinking to a dynamic software development role that bridges the gap between modern web technology and data-driven insights.
+    </p>
+  </div>
+</div>
+{% endblock %}
